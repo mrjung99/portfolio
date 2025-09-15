@@ -264,7 +264,7 @@ nav {
 }
 
 .project-card-content {
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .project-card h3 {
@@ -308,7 +308,7 @@ nav {
 
 .content {
   position: relative;
-
+  overflow-y: auto;
   width: 50%;
   background-color: white;
   padding: 0 20px;
@@ -553,9 +553,5 @@ footer {
   .content {
     width: 90%;
     padding: 15px;
-  }
-
-  .content img {
-    object-fit: cover;
   }
 }

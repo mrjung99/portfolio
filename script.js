@@ -26,7 +26,6 @@ document.querySelectorAll(".project-more").forEach((moreButtons) => {
 
     const card = moreButtons.closest(".project-card");
     popupImage.src = card.querySelector("img").src;
-    popupTitle.innerHTML = card.querySelector("h3").textContent;
     popupDescription.innerHTML = card.dataset.description;
 
     if (card.dataset.link) {
