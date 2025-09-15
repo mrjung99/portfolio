@@ -301,17 +301,16 @@ nav {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
-  z-index: 10000;
+  z-index: 1000;
   justify-content: center;
   align-items: center;
 }
 
 .content {
   position: relative;
-  overflow-y: auto;
   width: 50%;
   background-color: white;
-  padding: 0 20px;
+  padding: 0 30px 20px 30px;
   border-radius: 10px;
 }
 
@@ -347,6 +346,16 @@ nav {
 
 .popup-content img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 45px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  font-weight: 330;
+  font-style: normal;
+  line-height: normal;
+  text-align: justify;
+  padding: 10px 0;
 }
 
 /* Skills Section */

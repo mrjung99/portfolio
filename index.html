@@ -57,12 +57,17 @@
         <div class="project-grid">
           <div
             class="project-card"
-            data-description="A feature-rich video platform clone showcasing advanced vanilla JavaScript techniques. Engineered a custom video player with the YouTube IFrame API, implementing programmatic controls, keyboard shortcuts, and fullscreen functionality.
-
-Leveraged async/await for API data fetching and dynamic DOM rendering to create a seamless, single-page application experience. Built a responsive UI with event delegation, state management, and real-time comment interactions without any external frameworks.
-
-Tech: JavaScript (ES6+), YouTube API, CSS3, HTML5."
+            data-description="A feature-rich video platform clone showcasing 
+            advanced vanilla JavaScript techniques. Engineered a custom video 
+            player with the <b>YouTube IFrame API, implementing programmatic controls,
+             keyboard shortcuts, and fullscreen functionality.</b>
+            Leveraged <b>async/await for API data fetching</b> and <b>dynamic DOM rendering</b> to 
+            create a seamless, single-page application experience. Built a responsive UI 
+            with <b>event delegation, state management,</b> and real-time <b>comment interactions</b> without
+             any external frameworks."
+            data-tech="JavaScript (ES6+), YouTube API, CSS3, HTML5."
             data-link="https://vortexv.netlify.app"
+            data-github="https://github.com/mrjung99/youTube-clone"
           >
             <img id="image" src="/images/vortex1.png" alt="Project 1" />
             <div class="project-card-content">
@@ -74,26 +79,30 @@ Tech: JavaScript (ES6+), YouTube API, CSS3, HTML5."
             </div>
           </div>
 
-          <div class="project-card">
-            <img src="/images/2.jpg" alt="Project 2" />
+          <div class="project-grid">
+          <div
+            class="project-card"
+            data-description="A clean, responsive task manager built with vanilla JavaScript 
+            that demonstrates strong <b>CRUD operation implementation</b>. Features full <b>localStorage 
+            integration</b> for persistent data, allowing users to <b>add, edit, delete,</b> and <b>filter tasks</b> 
+            with real-time updates.
+            Implemented a dynamic UI with <b>form validation</b>, <b>status tracking,</b> and a <b>rotating inspirational 
+            quote system</b>. Showcases modern <b>DOM manipulation</b> and <b>event handling</b> without any external libraries."
+           data-tech="JavaScript (ES6+), YouTube API, CSS3, HTML5."
+            data-link="https://dailydrip1.netlify.app/"
+            data-github="https://github.com/mrjung99/To-Do-List-app"
+          >
+            <img id="image" src="/images/dailydrip.png" alt="Project 1" />
             <div class="project-card-content">
-              <p>A productivity app built with Vue.js and Firebase</p>
+              <h3>DailyDrip - Task Management App</h3>
+              <p>A full-featured online store built with React and Node.js</p>
               <div class="project-more">
                 <i class="fa-solid fa-arrow-up"></i>
               </div>
             </div>
           </div>
 
-          <div class="project-card">
-            <img src="/images/3.jpg" alt="Project 3" />
-            <div class="project-card-content">
-              <h3>Weather Dashboard</h3>
-              <p>Real-time weather application using OpenWeather API</p>
-              <div class="project-more">
-                <i class="fa-solid fa-arrow-up"></i>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -109,11 +118,14 @@ Tech: JavaScript (ES6+), YouTube API, CSS3, HTML5."
           <div class="title" id="title"></div>
           <div class="description" id="description"></div>
           <div class="technology-used" id="technology-used"></div>
+          <div >
+            <span>Tech: <span id="tech"></span></span>
+          </div>
           <div class="live-link" id="live-link">
-            <p>Link: <span id="link"></span></p>
+            <span>Live link: <span id="link"></span></span>
           </div>
           <div class="github-link">
-            <p>GitHub link: <span id="github-link"></span></p>
+            <span>GitHub link: <span id="github-link"></span></span>
           </div>
         </div>
       </div>

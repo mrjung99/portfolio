@@ -19,6 +19,8 @@ const popupTitle = document.getElementById("title");
 const popupDescription = document.getElementById("description");
 const popupLiveLink = document.getElementById("link");
 const popupImage = document.getElementById("popUp-image");
+const githubLink = document.getElementById("github-link");
+const tech = document.getElementById("tech");
 
 document.querySelectorAll(".project-more").forEach((moreButtons) => {
   moreButtons.addEventListener("click", (e) => {
@@ -27,11 +29,14 @@ document.querySelectorAll(".project-more").forEach((moreButtons) => {
     const card = moreButtons.closest(".project-card");
     popupImage.src = card.querySelector("img").src;
     popupDescription.innerHTML = card.dataset.description;
+    tech.innerHTML = card.dataset.tech;
 
-    if (card.dataset.link) {
+    if (card.dataset.link || card.dataset.github) {
       popupLiveLink.innerHTML = `<a href="${card.dataset.link}" target="_blank">${card.dataset.link}</a>`;
+      githubLink.innerHTML = `<a href="${card.dataset.github}" target="_blank">${card.dataset.github}</a>`;
     } else {
       popupLiveLink.innerHTML = "";
+      githubLink.innerHTML = "";
     }
 
     popUp.style.display = "flex";
