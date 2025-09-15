@@ -100,7 +100,7 @@ header {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px 0;
 }
@@ -272,21 +272,81 @@ nav {
   margin-bottom: 10px;
 }
 
-.project-links {
+.project-more {
+  width: 40px;
+  height: 40px;
+  background: #eaeced;
   display: flex;
-  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.project-links a {
-  margin-right: 15px;
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 500;
-  transition: all 0.3s ease;
+.project-more i {
+  font-size: 18px;
 }
 
-.project-links a:hover {
-  text-decoration: underline;
+.project-more:hover {
+  width: 42px;
+  height: 42px;
+  background-color: #e2e4e5;
+}
+
+/* project popup section */
+.project-popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  position: relative;
+
+  width: 50%;
+  background-color: white;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+.popup-content {
+  margin-top: 20px;
+}
+
+.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 1001;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e5ea;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: 0.2s ease;
+}
+
+.close:hover {
+  background-color: #cccfd7;
+  width: 36px;
+  height: 36px;
+}
+
+.popup-content i {
+  font-size: 20px;
+}
+
+.popup-content img {
+  width: 100%;
 }
 
 /* Skills Section */
@@ -471,6 +531,10 @@ footer {
   .hero-content h1 {
     font-size: 2.5rem;
   }
+
+  .content {
+    width: 80%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -484,5 +548,14 @@ footer {
 
   .hero-image img {
     max-width: 300px;
+  }
+
+  .content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .content img {
+    object-fit: cover;
   }
 }

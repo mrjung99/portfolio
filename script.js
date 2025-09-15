@@ -13,6 +13,36 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
+//project popup
+const popUp = document.getElementById("project-popup");
+const popupTitle = document.getElementById("title");
+const popupDescription = document.getElementById("description");
+const popupLiveLink = document.getElementById("link");
+const popupImage = document.getElementById("popUp-image");
+
+document.querySelectorAll(".project-more").forEach((moreButtons) => {
+  moreButtons.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    const card = moreButtons.closest(".project-card");
+    popupImage.src = card.querySelector("img").src;
+    popupTitle.innerHTML = card.querySelector("h3").textContent;
+    popupDescription.innerHTML = card.dataset.description;
+
+    if (card.dataset.link) {
+      popupLiveLink.innerHTML = `<a href="${card.dataset.link}" target="_blank">${card.dataset.link}</a>`;
+    } else {
+      popupLiveLink.innerHTML = "";
+    }
+
+    popUp.style.display = "flex";
+  });
+});
+
+document.getElementById("close").addEventListener("click", () => {
+  popUp.style.display = "none";
+});
+
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
