@@ -253,7 +253,7 @@ nav {
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -268,7 +268,7 @@ nav {
 }
 
 .project-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
@@ -346,16 +346,38 @@ nav {
 
 .popup-content img {
   width: 100%;
+  object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 45px rgba(0, 0, 0, 0.2);
 }
 
 .description {
-  font-weight: 330;
   font-style: normal;
+  font-weight: 345;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 15px;
+  color: var(--dark-color);
   line-height: normal;
   text-align: justify;
-  padding: 10px 0;
+  padding: 10px 0 20px 0;
+}
+
+.head {
+  font-size: 14px;
+  font-weight: 630;
+  color: var(--dark-color);
+}
+
+.link a,
+.link a,
+.tech {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link a:hover,
+.link a:hover {
+  color: #2563eb;
 }
 
 /* Skills Section */
