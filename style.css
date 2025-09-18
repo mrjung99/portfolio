@@ -206,6 +206,8 @@ nav {
 
 .social-links {
   margin-top: 30px;
+  display: flex;
+  /* justify-content: center; */
 }
 
 .social-links a {
