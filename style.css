@@ -269,6 +269,10 @@ nav {
   padding: 10px 20px;
 }
 
+.project-card-content p {
+  text-align: justify;
+}
+
 .project-card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
@@ -409,6 +413,11 @@ nav {
   margin-bottom: 20px;
 }
 
+.future-skill {
+  margin-bottom: 20px;
+  background-color: #64748b;
+}
+
 .skill-bar span {
   display: block;
   margin-bottom: 5px;
@@ -431,12 +440,21 @@ nav {
   animation: fillBar 2s ease-in-out forwards;
 }
 
+.skill-bar .learning::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background-color: #e2e8f0;
+  border-radius: 5px;
+  animation: fillBar 2s ease-in-out forwards;
+}
+
 @keyframes fillBar {
   from {
     width: 0;
   }
   to {
-    width: attr(data-percent);
+    width: inherit;
   }
 }
 
