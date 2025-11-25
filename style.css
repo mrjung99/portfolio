@@ -315,6 +315,7 @@ nav {
 .content {
   position: relative;
   width: 60%;
+  height: 90vh;
   background-color: white;
   padding: 0 30px 20px 30px;
   border-radius: 10px;
